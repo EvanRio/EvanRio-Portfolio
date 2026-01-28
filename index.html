@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - EvanRio</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="pp.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav-inner glass">
+      <div class="brand title-link">Portfolio</div>
+      <!-- Hamburger -->
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <!-- Navigation links -->
+      <nav class="nav-links" id="nav-links">
+    <a href="#accueil">Accueil</a>
+    <a href="#projets">Projets</a>
+    <a href="#contact" class="nav-highlight">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <!-- HERO -->
+  <main id="accueil" class="wrap">
+    <section class="hero">
+      <!-- Bloc gauche -->
+      <div class="hero-card glass">
+        <span class="tag">Étudiant · 2026</span>
+        <h1 class="hero-title"><span class="shine">Salut, je suis Evan</span></h1>
+        <h2 class="hero-sub">Étudiant en BUT Informatique</h2>
+        <p class="hero-text">
+          Je conçois des projets mêlant développement web, application mobile et bien d'autres.
+        </p>
+        <div class="cta">
+          <a class="btn ghost" href="#projets">Voir mes projets</a>
+          <a class="btn" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <!-- Bloc droit -->
+      <div class="hero-side">
+  <div class="profile-card glass fade-scroll">
+    <img class="avatar" src="Evan.jpg" alt="Photo de Evan" />
+    <h3 class="profile-name">EVAN</h3>
+    <p class="muted">Recherche une alternance en :</p>
+    <div class="skills">
+      <span class="badge">Dev Web</span>
+      <span class="badge">Dev Application Mobile</span>
+    </div>
+
+    <!-- Bouton GitHub -->
+    <a href="https://github.com/EvanRio" target="_blank" class="github-btn-glass">
+      <svg class="github-icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 
+        0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+        -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78
+        -.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+        0 0 .67-.21 2.2.82A7.56 7.56 0 0 1 8 4.81c.68.003 1.36.092 2 .27 
+        1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 
+        1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 
+        0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+        8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      Mon GitHub
+    </a>
+  </div>
+</div>
+
+
+      </section>
+
+    
+    <!-- PROJETS -->
+    <section id="projets" class="section">
+      <h2 class="section-title">Projets Académiques & Personnel</h2>
+      <div class="projects">
+        <article class="project-card glass fade-scroll visible">
+          <img src="Studiz.png" alt="Image du logo de studiz" />
+          <div class="project-body">
+            <h3>Application Mobile</h3>
+            <p class="muted">Studiz est une application mobile pour simplifier la vie étudiant, développer en autodidacte.</p>
+            <a class="btn project-link" href="https://studiz.fun/">Voir le projet</a>
+          </div>
+        </article>
+        <article class="project-card glass fade-scroll">
+          <img src="Verger.png" alt="Screen du site web" />
+          <div class="project-body">
+            <h3>Site Web</h3>
+            <p class="muted">Création du design, du site web en groupe sur un thème donné, dans notre cas un verger. Crée sur une période de 12h.</p>
+            <button class="btn project-link" onclick="openVergerModal()">Voir le projet</button>
+          </div>
+        </article>
+        <article class="project-card glass fade-scroll">
+          <img src="linux.jpg" alt="Exemple d'une machine virtuel linux" />
+          <div class="project-body">
+            <h3>Virtual Machine sous Linux</h3>
+            <p class="muted">Élaboration en 12h en groupe d'un guide d'installation de Linux sur une virtual machine.</p>
+            <button class="btn project-link" onclick="openLinuxModal()">Voir le projet</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact</h2>
+
+  <div class="grid">
+
+    <!-- CV -->
+    <a class="card glass social cv" href="CV-EVANRIO.pdf" target="_blank">
+      <i class="fa-solid fa-file-lines"></i>
+      <h3>Mon CV</h3>
+    </a>
+
+    <!-- LinkedIn -->
+    <a class="card glass social linkedin" href="www.linkedin.com/in/evan-heriault-37b377237" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+      <h3>LinkedIn</h3>
+    </a>
+
+<!-- Email -->
+<div class="card glass social email copy-email" data-email="evanrio777@gmail.com">
+  <i class="fa-solid fa-envelope"></i>
+  <h3 id="email-text">Copier l’email</h3>
+</div>
+
+
+  </div>
+</section>
+
+  </main>
+  <script>
+    // Année footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Animations au scroll
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.fade-scroll').forEach(el => observer.observe(el));
+
+    // Menu hamburger
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('open');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <script>
+  function openVergerModal() {
+    document.getElementById("verger-modal").classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeVergerModal() {
+    document.getElementById("verger-modal").classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  // Fermer en cliquant sur le fond
+  document.getElementById("verger-modal").addEventListener("click", (e) => {
+    if (e.target.id === "verger-modal") {
+      closeVergerModal();
+    }
+  });
+</script>
+<script>
+  function openLinuxModal() {
+    document.getElementById("linux-modal").classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLinuxModal() {
+    document.getElementById("linux-modal").classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  document.getElementById("linux-modal").addEventListener("click", (e) => {
+    if (e.target.id === "linux-modal") closeLinuxModal();
+  });
+</script>
+<script>
+  const emailCard = document.querySelector('.copy-email');
+
+  if (emailCard) {
+    emailCard.addEventListener('click', () => {
+      const email = emailCard.dataset.email;
+
+      navigator.clipboard.writeText(email).then(() => {
+        const text = document.getElementById('email-text');
+        const original = text.textContent;
+
+        text.textContent = "Email copié ✅";
+
+        setTimeout(() => {
+          text.textContent = original;
+        }, 2000);
+      });
+    });
+  }
+</script>
+
+
+
+
+  <!-- POPUP PROJET VERGER -->
+<div id="verger-modal" class="modal">
+  <div class="modal-content glass">
+    <button class="modal-close" onclick="closeVergerModal()">×</button>
+
+    <h2>🌳 Le Verger Lavallois</h2>
+    <p class="muted">
+      Dans le cadre d’un projet de 12h en B.U.T Informatique, 
+      j’ai conçu une maquette sur Figma à partir d’une analyse des besoins clients et utilisateurs
+       (persona, contextualisation, QQOQCP), puis reproduit le prototype en HTML et CSS.
+    </p>
+
+    <ul class="modal-links">
+      <li><a href="https://evanrio.github.io/vergerlavalois/" target="_blank">🌐 Site du projet</a></li>
+      <li><a href="https://github.com/EvanRio/vergerlavalois" target="_blank">💻 Code source (GitHub)</a></li>
+      <li><a href="https://www.figma.com/proto/Abh9dE6G74GUZOQYQq1FTO/Untitled?node-id=1-2&p=f&t=JOddhunnoqeag1po-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">🎨 Maquette Figma</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- POPUP PROJET LINUX -->
+<div id="linux-modal" class="modal">
+  <div class="modal-content glass">
+    <button class="modal-close" onclick="closeLinuxModal()">×</button>
+
+    <h2>🐧 Guide d’installation Linux</h2>
+    <p class="muted">
+      Projet réalisé en groupe en 12h : création d’un guide pour installer
+      <strong>Ubuntu</strong> sur une machine virtuelle via <strong>VirtualBox</strong>,
+      avec l’installation de plusieurs logiciels essentiels.
+    </p>
+
+    <ul class="modal-links">
+      <li><a href="https://docs.google.com/document/d/1wkPrFYKrEqRcnaBVIbFQD7HlpHVuXzE7jfVg-c8tGIQ/edit?usp=sharing" target="_blank">📄 Guide d’installation</a></li>
+    </ul>
+  </div>
+</div>
+
+
+</body>
+</html>
