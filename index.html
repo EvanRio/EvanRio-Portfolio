@@ -50,8 +50,8 @@
       <div class="hero-side">
   <div class="profile-card glass fade-scroll">
     <img class="avatar" src="Evan.jpg" alt="Photo de Evan" />
-    <h3 class="profile-name">EVAN</h3>
-    <p class="muted">Recherche une alternance en :</p>
+    <h3 class="profile-name">Evan</h3>
+    <p class="muted">En recherche d'alternance en :</p>
     <div class="skills">
       <span class="badge">Dev Web</span>
       <span class="badge">Dev Application Mobile</span>
@@ -122,7 +122,7 @@
     </a>
 
     <!-- LinkedIn -->
-    <a class="card glass social linkedin" href="www.linkedin.com/in/evan-heriault-37b377237" target="_blank">
+    <a class="card glass social linkedin" href="https://www.linkedin.com/in/evan-heriault-37b377237/" target="_blank">
       <i class="fa-brands fa-linkedin"></i>
       <h3>LinkedIn</h3>
     </a>
@@ -140,7 +140,11 @@
   </main>
   <script>
     // Année footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
     // Animations au scroll
     const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
